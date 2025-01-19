@@ -41,11 +41,15 @@ Este proyecto es una aplicación básica de gestión de productos para una tiend
 2. **Configurar la base de datos:**
    -  Usa tu gestor tu gestor de base de datos (phpMyAdmin, MySQL Workbench, etc.).
    - Asegúrate de que la base de datos se llame `tienda_virtual`.
- id_producto (INT, PRIMARY KEY, AUTO_INCREMENT)
- nombre (VARCHAR(100))
- descripcion (TEXT)
- precio (DECIMAL(8, 2))
- stock (INT)
+CREATE DATABASE tienda_virtual;
+USE tienda_virtual;
+CREATE TABLE productos (
+    id_producto INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100),
+    descripcion TEXT,
+    precio DECIMAL(8,2),
+    stock INT
+);
 
 3. **Mover archivos al servidor local:**
    - Copia el contenido del proyecto en la carpeta raíz de tu servidor web (por ejemplo, `htdocs` en XAMPP).
