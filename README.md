@@ -18,7 +18,6 @@ Este proyecto es una aplicación básica de gestión de productos para una tiend
 |   |-- crear.php
 |   |-- editar.php
 |   |-- eliminar.php
-|-- database.sql
 ```
 
 ### Descripción de Carpetas:
@@ -26,8 +25,7 @@ Este proyecto es una aplicación básica de gestión de productos para una tiend
 - **app/models**: Modelos que interactúan con la base de datos.
 - **views**: Vistas que renderizan la interfaz para el usuario.
 - **public**: Punto de entrada de la aplicación.
-- **database.sql**: Script para la creación de la base de datos.
-
+- 
 ## Requisitos
 - PHP >= 7.4
 - Servidor web local (como XAMPP, WAMP o MAMP)
@@ -41,8 +39,13 @@ Este proyecto es una aplicación básica de gestión de productos para una tiend
    ```
 
 2. **Configurar la base de datos:**
-   - Importa el archivo `database.sql` en tu gestor de base de datos (phpMyAdmin, MySQL Workbench, etc.).
+   -  Usa tu gestor tu gestor de base de datos (phpMyAdmin, MySQL Workbench, etc.).
    - Asegúrate de que la base de datos se llame `tienda_virtual`.
+ id_producto (INT, PRIMARY KEY, AUTO_INCREMENT)
+ nombre (VARCHAR(100))
+ descripcion (TEXT)
+ precio (DECIMAL(8, 2))
+ stock (INT)
 
 3. **Mover archivos al servidor local:**
    - Copia el contenido del proyecto en la carpeta raíz de tu servidor web (por ejemplo, `htdocs` en XAMPP).
